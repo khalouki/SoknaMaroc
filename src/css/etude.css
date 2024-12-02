@@ -1,0 +1,178 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.bg-gradiant-p{
+    background: linear-gradient(360deg, rgba(159,159,232,1) 22%, rgba(106,0,255,0.9808298319327731) 74%);
+}
+.bg-gradiant-b{
+    background: linear-gradient(360deg, rgba(159,179,232,1) 22%, rgba(0,99,255,0.9808298319327731) 63%);   }
+.bg-auth{
+    background-color: rgb(0 99 255 / 11%);
+}
+.rental-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.rental-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rental-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.rental-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.rental-image:hover .image-overlay {
+    opacity: 1;
+}
+
+.view-gallery-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.view-gallery-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.rental-details {
+    padding: 1rem;
+}
+
+.rental-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.rental-location {
+    margin-bottom: 0.5rem;
+}
+
+.rental-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6fff43;
+    
+}
+
+.rental-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 51%);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.carousel-container {
+    position: relative;
+    height: 400px;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.image-counter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
